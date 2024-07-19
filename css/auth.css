@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#auth-container {
+    min-height: 100vh;
+    background-color: rgb(209, 220, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: rgb(14, 11, 11);
+    text-shadow: 2px 4px 4px rgba(34, 50, 138, 0.3);
+    margin-bottom: 24px; 
+}
+
+#login-form, #signup-form {
+    background-color: rgb(249, 249, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 640px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.login-field-container,
+.signup-field-container {
+    margin: 12px 0; 
+}
+
+#login-username, #login-password,
+#signup-username, #signup-password {
+    background-color: transparent;
+    border: 1px solid #6d84e1;
+    padding: 8px 12px; 
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    width: 100%; 
+    margin-bottom: 12px; 
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgb(14, 11, 11);
+    text-shadow: 2px 4px 4px rgba(123, 127, 154, 0.3);
+}
+
+#login-button, #signup-button {
+    background-color: rgb(68, 127, 238);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    margin: 16px 0;
+    transition: background-color 0.3s; 
+}
+
+#login-button:hover, #signup-button:hover {
+    background-color: rgb(47, 50, 203);
+}
+
+#login-form p, #signup-form p {
+    text-align: center; 
+    font-weight: 600;
+}
+
+#login-form p a, #signup-form p a {
+    background-color: rgb(224, 231, 13);
+    padding: 8px;
+    text-decoration: none;
+    color: #060606;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: background-color 0.3s; 
+    margin-top: 12px; 
+}
+
+#login-form p a:hover, #signup-form p a:hover {
+    background-color: rgb(205, 212, 11);
+}

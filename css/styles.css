@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353434;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(78, 77, 77, 0.1);
+}
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 60px);
+    padding: 0;
+}
+
+.sidebar {
+    width: 200px;
+    background: #403e3e;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sidebar nav li {
+    margin: 15px 0;
+}
+
+.sidebar nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.sidebar nav a:hover {
+    background: #302d2d;
+}
+
+
+#note-container {
+    flex: 1;
+    padding: 20px;
+    background: #2a2828;
+    overflow-y: auto;
+}
+
+#note-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#note-title, #note-content {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+#note-title:focus, #note-content:focus {
+    border: 2px solid #2460ec;
+}
+
+#note-content {
+    resize: none;
+    height: 50px;
+    transition: height 0.3s;
+}
+
+.form-controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #3baae6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0a8ebe;
+}
+
+#reset-button{
+    background-color: red;
+}
+
+#reset-button:hover{
+    background-color: rgb(216, 70, 70);
+}
